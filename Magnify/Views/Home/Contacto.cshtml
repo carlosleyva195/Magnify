@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Contacto";
+}
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<section class="contact_info_area sec_pad bg_color">
+    <div class="container">
+        <h1 class="f_size_30 f_600 t_color3 l_height45 text-center  mt-5">¡Empieza ahora!</h1>
+        <h2 class="f_size_20 f_600 t_color3 l_height45 text-center mb_90">Obtén todos los beneficios que Magnify tiene para ti, registra tus datos <br /> y a la brevedad nos pondremos en contacto.</h2>
+        <div class="row">
+            <div class="col-lg-3 pr-0">
+                <div class="contact_info_item">
+                    <h6 class="f_p f_size_20 t_color3 f_500 mb_20">
+                        Dirección de oficinas
+                    </h6>
+                    <p class="f_400 f_size_15">
+                        Calz. de los Ángeles 127-D, Casa Grande, 83246 Hermosillo, Son
+                    </p>
+                </div>
+                <div class="contact_info_item">
+                    <h6 class="f_p f_size_20 t_color3 f_500 mb_20">
+                        Información de contacto
+                    </h6>
+                    <p class="f_400 f_size_15"><span class="f_400 t_color3">Teléfono:</span>662 276 4075</p>
+                    <p class="f_400 f_size_15"><span class="f_400 t_color3">Email:</span> <a href="mailto:info@xipetechnology.com ">info@xipetechnology.com </a></p>
+                    <p class="f_400 f_size_15"><span class="f_400 t_color3">Linkedin:</span> <a href="https://mx.linkedin.com/company/xipe-technology">Linkedin</a></p>
+                    <p class="f_400 f_size_15"><span class="f_400 t_color3">Facebook:</span> <a href="https://www.facebook.com/XipeTechnology/ ">Facebook</a></p>
+                    <p class="f_400 f_size_15"><span class="f_400 t_color3">Instagram:</span> <a href="https://www.instagram.com/xipe_tech/?hl=es-la ">Instagram</a></p>
+                </div>
+            </div>
+            <div class="col-lg-8 offset-lg-1">
+                <div class="contact_form">
+                    <form action="/" method="post" id="formulario" class="contact_form_box">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group text_box">
+                                    <input type="text" id="name" name="Name" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group text_box">
+                                    <input type="text" id="email" name="Email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group text_box">
+                                    <input type="text" id="empresa" name="Enterprise" placeholder="Empresa">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group text_box">
+                                    <input type="text" id="subject" name="Subject" placeholder="Asunto">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group text_box">
+                                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="Ingresa tu mensaje . . ."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        @*<button type="submit" class="hosting_btn btn_hover">Enviar</button>*@
+                        <button type="submit" class="btn btn-lg btn-primary btn_hover">Enviar</button>
+                        @*<div id="success">Your message succesfully sent!</div>
+                            <div id="error">Opps! There is something wrong. Please try again</div>*@
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $('#formulario').on("submit", function () {
+        swal({
+            title: "Gracias por escribirnos en breve nos pondremos en contacto.",
+            text: " ",
+            icon: "success",
+            buttons: false,
+            timer: 3000
+        });
+    });
+</script>

@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Magnify</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+    </environment>
+    <link href="~/css/stylexipesaasland.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span data-text-preloader="X" class="letters-loading">
+                        X
+                    </span>
+                    <span data-text-preloader="I" class="letters-loading">
+                        I
+                    </span>
+                    <span data-text-preloader="P" class="letters-loading">
+                        P
+                    </span>
+                    <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                    <span data-text-preloader="T" class="letters-loading">
+                        T
+                    </span>
+                    <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                    <span data-text-preloader="C" class="letters-loading">
+                        C
+                    </span>
+                    <span data-text-preloader="H" class="letters-loading">
+                        H
+                    </span>
+                    <span data-text-preloader="N" class="letters-loading">
+                        N
+                    </span>
+                    <span data-text-preloader="O" class="letters-loading">
+                        O
+                    </span>
+                    <span data-text-preloader="L" class="letters-loading">
+                        L
+                    </span>
+                    <span data-text-preloader="O" class="letters-loading">
+                        O
+                    </span>
+                    <span data-text-preloader="G" class="letters-loading">
+                        G
+                    </span>
+                    <span data-text-preloader="Y" class="letters-loading">
+                        Y
+                    </span>
+                </div>
+                <p class="text-center">Loading</p>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header_area">
+            <nav class="navbar navbar-expand-lg menu_one menu_four hosting_menu">
+                <div class="container">
+                    <a class="navbar-brand sticky_logo" href="/"><img src="~/img/Magnify_Logo_Color.png" srcset="img/logo2x-2.png 2x" alt="logo" style="height:100px;"><img src="~/img/magnifyblack.png" srcset="img/logo2x.png 2x" alt="" style="height:50px;"></a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu_toggle">
+                            <span class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <span class="hamburger-cross">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav menu w_menu ml-auto">
+                            <li class="nav-item dropdown submenu mega_menu mega_menu_two active">
+                                <a class="nav-link dropdown-toggle" href="/Home/Index" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="dropdown submenu nav-item">
+                                <a title="Pages" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Producto</a>
+                                <ul role="menu" class=" dropdown-menu">
+                                    <li class="dropdown submenu nav-item">
+                                        <a title="Ventajas" class="dropdown-toggle nav-link" role="button" aria-haspopup="true" aria-expanded="false" href="/Home/Ventajas">Ventajas <span class="arrow_carrot-right"></span> </a>
+                                    </li>
+
+                                    <li class="dropdown submenu nav-item">
+                                        <a title="Set Up" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Set Up <span class="arrow_carrot-right"></span> </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu mega_menu">
+                                <a class="nav-link dropdown-toggle" href="/Home/Precio" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Precio
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="/Home/Blog" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown submenu mega_menu">
+                                <a class="nav-link dropdown-toggle" href="/Home/Contacto" role="button" aria-haspopup="true" aria-expanded="false">
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="btn_get btn_hover hidden-sm hidden-xs" href="#">Iniciar</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+    <div class="">
+        @*<partial name="_CookieConsentPartial" />*@
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <section class="h_action_promo_area">
+            <div class="overlay_bg" style="background: url('/img/hosting_action_bg.png');"></div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="h_promo_content">
+                            <h2>Empieza a crecer con Magnify!</h2>
+                            <p>Conoce lo fácil que es ver los datos de tu empresa.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <a href="#" class="hosting_btn btn_hover">Ver demo.</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer_area h_footer_dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="f_widget dark_widget company_widget">
+                            <a href="#" class="f-logo"><img src="~/img/Magnify_Logo_Color.png" alt="" class="w-100"></a>
+                            <p>Software desarrollado y diseñado por <a href="http://www.xipetechnology.com/">Xipe Technology</a></p>
+                            <div class="f_social_icon">
+                                <a href="https://www.facebook.com/XipeTechnology/" target="_blank" class="ti-facebook"></a>
+                                <a href="https://twitter.com/xipe_tech" target="_blank" class="ti-twitter-alt"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget dark_widget about-widget pl_70">
+                            <h3 class="f-title f_500 t_color f_size_18 mb_40">Ventajas</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">Como iniciar</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Politicas de privacidad</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget dark_widget about-widget pl_20">
+                            <h3 class="f-title f_500 t_color f_size_18 mb_40">Compañia</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="http://xipedev.uk" target="_blank">Xipe U.K.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="f_widget dark_widget about-widget pl_20">
+                            <h3 class="f-title f_500 t_color f_size_18 mb_40">Contacto</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="mailto:info@xipetechnology.com">Email</a></li>
+                                <li><a href="#">Teléfono</a></li>
+                                <li><a href="https://www.facebook.com/XipeTechnology" target="_blank">Facebook</a></li>
+                                <li><a href="https://twitter.com/xipe_tech" target="_blank">Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+        </script>
+    </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>
